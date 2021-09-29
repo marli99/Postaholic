@@ -1,0 +1,6 @@
+framework module Pods_Postaholic {
+  umbrella header "Pods-Postaholic-umbrella.h"
+
+  export *
+  module * { export * }
+}

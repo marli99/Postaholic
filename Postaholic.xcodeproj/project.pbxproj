@@ -3,29 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		347CD4EC07395F55F16B2D28 /* Pods_Postaholic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B050D47B7CE1E6EE92FBC2 /* Pods_Postaholic.framework */; };
+		F363ACCB270EBF84001F849D /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F363ACCA270EBF84001F849D /* SplashScreenView.swift */; };
+		F363ACCF270EC34C001F849D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F363ACCE270EC34C001F849D /* LoginView.swift */; };
+		F363ACD1270EC616001F849D /* AuthScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F363ACD0270EC616001F849D /* AuthScreenView.swift */; };
+		F363ACD3270ED164001F849D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F363ACD2270ED164001F849D /* RegisterView.swift */; };
+		F363ACD6270F0FBF001F849D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F363ACD5270F0FBF001F849D /* AuthService.swift */; };
+		F363ACD8270F11EC001F849D /* FireStoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F363ACD7270F11EC001F849D /* FireStoreService.swift */; };
+		F363ACDD270F1CE0001F849D /* Helvetica-Font in Resources */ = {isa = PBXBuildFile; fileRef = F363ACDC270F1CE0001F849D /* Helvetica-Font */; };
 		F372EA3726FC64B5008A58EB /* PostaholicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F372EA3626FC64B5008A58EB /* PostaholicApp.swift */; };
 		F372EA3926FC64B5008A58EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F372EA3826FC64B5008A58EB /* ContentView.swift */; };
 		F372EA3B26FC64B6008A58EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F372EA3A26FC64B6008A58EB /* Assets.xcassets */; };
 		F372EA3E26FC64B6008A58EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F372EA3D26FC64B6008A58EB /* Preview Assets.xcassets */; };
-		F372EA4626FC6942008A58EB /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = F372EA4526FC6942008A58EB /* GoogleService-Info (1).plist */; };
+		F372EA4626FC6942008A58EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F372EA4526FC6942008A58EB /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		92B050D47B7CE1E6EE92FBC2 /* Pods_Postaholic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Postaholic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5820E270867D5B17864E129 /* Pods-Postaholic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Postaholic.debug.xcconfig"; path = "Target Support Files/Pods-Postaholic/Pods-Postaholic.debug.xcconfig"; sourceTree = "<group>"; };
 		DF6075CB4C3AA328719C878F /* Pods-Postaholic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Postaholic.release.xcconfig"; path = "Target Support Files/Pods-Postaholic/Pods-Postaholic.release.xcconfig"; sourceTree = "<group>"; };
+		F363ACCA270EBF84001F849D /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		F363ACCE270EC34C001F849D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F363ACD0270EC616001F849D /* AuthScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenView.swift; sourceTree = "<group>"; };
+		F363ACD2270ED164001F849D /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		F363ACD5270F0FBF001F849D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		F363ACD7270F11EC001F849D /* FireStoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStoreService.swift; sourceTree = "<group>"; };
+		F363ACDC270F1CE0001F849D /* Helvetica-Font */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Helvetica-Font"; path = "../../../../Downloads/Helvetica-Font"; sourceTree = "<group>"; };
 		F372EA3326FC64B5008A58EB /* Postaholic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Postaholic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F372EA3626FC64B5008A58EB /* PostaholicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostaholicApp.swift; sourceTree = "<group>"; };
 		F372EA3826FC64B5008A58EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F372EA3A26FC64B6008A58EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F372EA3D26FC64B6008A58EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F372EA3F26FC64B6008A58EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F372EA4526FC6942008A58EB /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info (1).plist"; path = "../../../Downloads/GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		F372EA4526FC6942008A58EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +60,24 @@
 				A5820E270867D5B17864E129 /* Pods-Postaholic.debug.xcconfig */,
 				DF6075CB4C3AA328719C878F /* Pods-Postaholic.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F363ACD4270F0FA0001F849D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F363ACD5270F0FBF001F849D /* AuthService.swift */,
+				F363ACD7270F11EC001F849D /* FireStoreService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F363ACD9270F1B7B001F849D /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F363ACDC270F1CE0001F849D /* Helvetica-Font */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 		F36D0C529E218AD2F133ABFD /* Frameworks */ = {
@@ -79,9 +109,10 @@
 		F372EA3526FC64B5008A58EB /* Postaholic */ = {
 			isa = PBXGroup;
 			children = (
-				F372EA4526FC6942008A58EB /* GoogleService-Info (1).plist */,
+				F363ACD9270F1B7B001F849D /* fonts */,
+				F363ACD4270F0FA0001F849D /* Services */,
+				F372EA4526FC6942008A58EB /* GoogleService-Info.plist */,
 				F372EA3626FC64B5008A58EB /* PostaholicApp.swift */,
-				F372EA3826FC64B5008A58EB /* ContentView.swift */,
 				F372EA3A26FC64B6008A58EB /* Assets.xcassets */,
 				F372EA3F26FC64B6008A58EB /* Info.plist */,
 				F372EA3C26FC64B6008A58EB /* Preview Content */,
@@ -92,6 +123,11 @@
 		F372EA3C26FC64B6008A58EB /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				F363ACD0270EC616001F849D /* AuthScreenView.swift */,
+				F372EA3826FC64B5008A58EB /* ContentView.swift */,
+				F363ACCE270EC34C001F849D /* LoginView.swift */,
+				F363ACCA270EBF84001F849D /* SplashScreenView.swift */,
+				F363ACD2270ED164001F849D /* RegisterView.swift */,
 				F372EA3D26FC64B6008A58EB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -157,8 +193,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F372EA3E26FC64B6008A58EB /* Preview Assets.xcassets in Resources */,
-				F372EA4626FC6942008A58EB /* GoogleService-Info (1).plist in Resources */,
+				F372EA4626FC6942008A58EB /* GoogleService-Info.plist in Resources */,
 				F372EA3B26FC64B6008A58EB /* Assets.xcassets in Resources */,
+				F363ACDD270F1CE0001F849D /* Helvetica-Font in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +250,12 @@
 			files = (
 				F372EA3926FC64B5008A58EB /* ContentView.swift in Sources */,
 				F372EA3726FC64B5008A58EB /* PostaholicApp.swift in Sources */,
+				F363ACCF270EC34C001F849D /* LoginView.swift in Sources */,
+				F363ACD3270ED164001F849D /* RegisterView.swift in Sources */,
+				F363ACCB270EBF84001F849D /* SplashScreenView.swift in Sources */,
+				F363ACD8270F11EC001F849D /* FireStoreService.swift in Sources */,
+				F363ACD1270EC616001F849D /* AuthScreenView.swift in Sources */,
+				F363ACD6270F0FBF001F849D /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -49,6 +49,20 @@ struct ProfileView: View {
                 
             Text("MARLI CORREIA")
                 .textCase(/*@START_MENU_TOKEN@*/.uppercase/*@END_MENU_TOKEN@*/)
+                
+                Button(action:{
+                    print("edit")
+                }, label:{
+                    Image(systemName: "highlighter")
+                                  
+                                        .resizable()
+                                        .foregroundColor(.black)
+                                        .frame(width: 30, height: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .padding()
+                    
+                       
+                    
+                })
             }.padding()
             
             HStack{
@@ -56,6 +70,42 @@ struct ProfileView: View {
                 Text("Email:")
         
             Text("marlicorreia99@gmail.om")
+                
+                Button(action:{
+                    print("edit")
+                }, label:{
+                    Image(systemName: "highlighter")
+                                  
+                                        .resizable()
+                                        .foregroundColor(.black)
+                                        .frame(width: 30, height: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .padding()
+                    
+                       
+                    
+                })
+                
+            }.padding()
+            
+            HStack{
+            
+                Text("Cell:")
+        
+            Text("0792405489")
+                
+                Button(action:{
+                    print("edit")
+                }, label:{
+                    Image(systemName: "highlighter")
+                                  
+                                        .resizable()
+                                        .foregroundColor(.black)
+                                        .frame(width: 30, height: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .padding()
+                    
+                       
+                    
+                })
                 
                 
             }.padding()

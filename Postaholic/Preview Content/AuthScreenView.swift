@@ -15,8 +15,11 @@ struct AuthScreenView: View {
         
         ZStack{
             ZStack(alignment: Alignment(horizontal: .trailing, vertical: .bottom)){
-                LinearGradient(gradient: Gradient(colors: [Color.black, Color.purple
-                ]), startPoint: /*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/)
+                LinearGradient(gradient: Gradient(colors: [
+                    Color("BlueNew"),
+                    Color("PinkNew")
+                ]), startPoint: .topLeading, endPoint: .bottomLeading)
+                        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                     .clipShape(CShape())
                 
                 Path{ path in

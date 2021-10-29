@@ -20,3 +20,11 @@ made and making their own posts to share with the world.
 ![Profile](https://user-images.githubusercontent.com/55394634/134470460-4db28771-120d-4bd8-bf93-3e45e113f819.png)
 ![Posts view](https://user-images.githubusercontent.com/55394634/134470481-54c59393-c815-45ef-bde3-5068cfb076b9.png)
 ![User Flow](https://user-images.githubusercontent.com/55394634/134470496-f932cd88-5ca6-417d-9746-a8050fad5ed8.png)
+
+#Technologies Used
+I created my social media IOS application using Xcode, Swift and firebase for my database
+
+#Plagarism Form
+
+![plagarismIOS](https://user-images.githubusercontent.com/55394634/139499463-3e9d0245-6a07-4031-9457-9385a0ad8c6b.jpg)
+

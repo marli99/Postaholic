@@ -12,13 +12,22 @@ import Firebase
 struct PostaholicApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @AppStorage("userId") var userId: String = ""
+    @AppStorage("isOnboarding") var isOnboarding: Bool = false
+    
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if userId.isEmpty{
+                AuthScreenView()
+            }else{
+                ContentView()
+            }
+            
         }
     }
 }
+
 
 class AppDelegate: NSObject, UIApplicationDelegate{
     //syart typing didFinish and select second suggestion

@@ -10,8 +10,10 @@ import SwiftUI
 struct SplashScreenView: View {
     var body: some View {
         ZStack{
-            LinearGradient(gradient: Gradient(colors: [Color.black, Color.purple
-            ]), startPoint: /*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/)
+            LinearGradient(gradient: Gradient(colors: [
+                Color("BlueNew"),
+                Color("PinkNew")
+            ]), startPoint: .topLeading, endPoint: .bottomLeading)
                     .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             VStack(alignment: .center, spacing: 30){
                 
@@ -21,8 +23,10 @@ struct SplashScreenView: View {
                 .aspectRatio(contentMode: .fit)
             
                 Text("Welcome to")
+                    .font(Font.custom("helvetica-light-587ebe5a59211", size: 28))
                     .padding()
                 Text("Postaholic")
+                    .font(Font.custom("DancingScript-VariableFont_wght", size: 25))
                     .padding()
        
             }

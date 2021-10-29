@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		347CD4EC07395F55F16B2D28 /* Pods_Postaholic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B050D47B7CE1E6EE92FBC2 /* Pods_Postaholic.framework */; };
+		F356B0DC2710163400DC5F7F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F356B0DB2710163400DC5F7F /* OnboardingView.swift */; };
+		F356B0E02710173D00DC5F7F /* OnboardingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F356B0DF2710173D00DC5F7F /* OnboardingCardView.swift */; };
+		F356B0E32710236C00DC5F7F /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F356B0E22710236C00DC5F7F /* StartButtonView.swift */; };
 		F363ACCB270EBF84001F849D /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F363ACCA270EBF84001F849D /* SplashScreenView.swift */; };
 		F363ACCF270EC34C001F849D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F363ACCE270EC34C001F849D /* LoginView.swift */; };
 		F363ACD1270EC616001F849D /* AuthScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F363ACD0270EC616001F849D /* AuthScreenView.swift */; };
@@ -15,17 +18,60 @@
 		F363ACD6270F0FBF001F849D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F363ACD5270F0FBF001F849D /* AuthService.swift */; };
 		F363ACD8270F11EC001F849D /* FireStoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F363ACD7270F11EC001F849D /* FireStoreService.swift */; };
 		F363ACDD270F1CE0001F849D /* Helvetica-Font in Resources */ = {isa = PBXBuildFile; fileRef = F363ACDC270F1CE0001F849D /* Helvetica-Font */; };
+		F365F378272979E7001EAF66 /* helvetica-light-587ebe5a59211.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F365F377272979E7001EAF66 /* helvetica-light-587ebe5a59211.ttf */; };
+		F36B0197272C61660081C153 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F36B0196272C61660081C153 /* WidgetKit.framework */; };
+		F36B0199272C61660081C153 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F36B0198272C61660081C153 /* SwiftUI.framework */; };
+		F36B019C272C61660081C153 /* quickpostwidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36B019B272C61660081C153 /* quickpostwidget.swift */; };
+		F36B019F272C61690081C153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F36B019E272C61690081C153 /* Assets.xcassets */; };
+		F36B01A1272C61690081C153 /* quickpostwidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F36B019D272C61660081C153 /* quickpostwidget.intentdefinition */; };
+		F36B01A2272C61690081C153 /* quickpostwidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F36B019D272C61660081C153 /* quickpostwidget.intentdefinition */; };
+		F36B01A5272C61690081C153 /* quickpostwidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F36B0195272C61660081C153 /* quickpostwidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F36B01AB272C6ABB0081C153 /* BttonskipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36B01AA272C6ABB0081C153 /* BttonskipView.swift */; };
 		F372EA3726FC64B5008A58EB /* PostaholicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F372EA3626FC64B5008A58EB /* PostaholicApp.swift */; };
 		F372EA3926FC64B5008A58EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F372EA3826FC64B5008A58EB /* ContentView.swift */; };
 		F372EA3B26FC64B6008A58EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F372EA3A26FC64B6008A58EB /* Assets.xcassets */; };
 		F372EA3E26FC64B6008A58EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F372EA3D26FC64B6008A58EB /* Preview Assets.xcassets */; };
 		F372EA4626FC6942008A58EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F372EA4526FC6942008A58EB /* GoogleService-Info.plist */; };
+		F3AEA60727183DAA00025FB5 /* CreatePostScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEA60627183DAA00025FB5 /* CreatePostScreenView.swift */; };
+		F3AEA60A2718919000025FB5 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEA6092718919000025FB5 /* ImagePicker.swift */; };
+		F3B916542729EFEE003C798B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B916532729EFEE003C798B /* ProfileView.swift */; };
+		F3FDF0E52720C8CA006DE7B7 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FDF0E42720C8C9006DE7B7 /* StorageService.swift */; };
+		F3FDF0E727215416006DE7B7 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FDF0E627215416006DE7B7 /* PostView.swift */; };
+		F3FDF0E927215974006DE7B7 /* FeedScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FDF0E827215974006DE7B7 /* FeedScreenView.swift */; };
+		F3FDF0EC27215E9C006DE7B7 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FDF0EB27215E9C006DE7B7 /* PostModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F36B01A3272C61690081C153 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F372EA2B26FC64B5008A58EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F36B0194272C61660081C153;
+			remoteInfo = quickpostwidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F36B01A6272C61690081C153 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F36B01A5272C61690081C153 /* quickpostwidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		92B050D47B7CE1E6EE92FBC2 /* Pods_Postaholic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Postaholic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5820E270867D5B17864E129 /* Pods-Postaholic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Postaholic.debug.xcconfig"; path = "Target Support Files/Pods-Postaholic/Pods-Postaholic.debug.xcconfig"; sourceTree = "<group>"; };
 		DF6075CB4C3AA328719C878F /* Pods-Postaholic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Postaholic.release.xcconfig"; path = "Target Support Files/Pods-Postaholic/Pods-Postaholic.release.xcconfig"; sourceTree = "<group>"; };
+		F356B0DB2710163400DC5F7F /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		F356B0DF2710173D00DC5F7F /* OnboardingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCardView.swift; sourceTree = "<group>"; };
+		F356B0E22710236C00DC5F7F /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
 		F363ACCA270EBF84001F849D /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		F363ACCE270EC34C001F849D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F363ACD0270EC616001F849D /* AuthScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenView.swift; sourceTree = "<group>"; };
@@ -33,6 +79,16 @@
 		F363ACD5270F0FBF001F849D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		F363ACD7270F11EC001F849D /* FireStoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStoreService.swift; sourceTree = "<group>"; };
 		F363ACDC270F1CE0001F849D /* Helvetica-Font */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Helvetica-Font"; path = "../../../../Downloads/Helvetica-Font"; sourceTree = "<group>"; };
+		F365F376272978FE001EAF66 /* DancingScript-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DancingScript-VariableFont_wght.ttf"; path = "../../../../Downloads/Dancing_Script/DancingScript-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		F365F377272979E7001EAF66 /* helvetica-light-587ebe5a59211.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "helvetica-light-587ebe5a59211.ttf"; path = "../../../../Downloads/Helvetica-Font/helvetica-light-587ebe5a59211.ttf"; sourceTree = "<group>"; };
+		F36B0195272C61660081C153 /* quickpostwidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = quickpostwidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F36B0196272C61660081C153 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		F36B0198272C61660081C153 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		F36B019B272C61660081C153 /* quickpostwidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quickpostwidget.swift; sourceTree = "<group>"; };
+		F36B019D272C61660081C153 /* quickpostwidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = quickpostwidget.intentdefinition; sourceTree = "<group>"; };
+		F36B019E272C61690081C153 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F36B01A0272C61690081C153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F36B01AA272C6ABB0081C153 /* BttonskipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BttonskipView.swift; sourceTree = "<group>"; };
 		F372EA3326FC64B5008A58EB /* Postaholic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Postaholic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F372EA3626FC64B5008A58EB /* PostaholicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostaholicApp.swift; sourceTree = "<group>"; };
 		F372EA3826FC64B5008A58EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,9 +96,25 @@
 		F372EA3D26FC64B6008A58EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F372EA3F26FC64B6008A58EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F372EA4526FC6942008A58EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F3AEA60627183DAA00025FB5 /* CreatePostScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostScreenView.swift; sourceTree = "<group>"; };
+		F3AEA6092718919000025FB5 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		F3B916532729EFEE003C798B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F3FDF0E42720C8C9006DE7B7 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		F3FDF0E627215416006DE7B7 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		F3FDF0E827215974006DE7B7 /* FeedScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedScreenView.swift; sourceTree = "<group>"; };
+		F3FDF0EB27215E9C006DE7B7 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F36B0192272C61660081C153 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F36B0199272C61660081C153 /* SwiftUI.framework in Frameworks */,
+				F36B0197272C61660081C153 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F372EA3026FC64B5008A58EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,11 +135,22 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F356B0E1271018C600DC5F7F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F356B0DF2710173D00DC5F7F /* OnboardingCardView.swift */,
+				F356B0E22710236C00DC5F7F /* StartButtonView.swift */,
+				F36B01AA272C6ABB0081C153 /* BttonskipView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		F363ACD4270F0FA0001F849D /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				F363ACD5270F0FBF001F849D /* AuthService.swift */,
 				F363ACD7270F11EC001F849D /* FireStoreService.swift */,
+				F3FDF0E42720C8C9006DE7B7 /* StorageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -75,15 +158,31 @@
 		F363ACD9270F1B7B001F849D /* fonts */ = {
 			isa = PBXGroup;
 			children = (
+				F365F377272979E7001EAF66 /* helvetica-light-587ebe5a59211.ttf */,
+				F365F376272978FE001EAF66 /* DancingScript-VariableFont_wght.ttf */,
 				F363ACDC270F1CE0001F849D /* Helvetica-Font */,
 			);
-			path = fonts;
+			name = fonts;
+			path = Postaholic/fonts;
+			sourceTree = SOURCE_ROOT;
+		};
+		F36B019A272C61660081C153 /* quickpostwidget */ = {
+			isa = PBXGroup;
+			children = (
+				F36B019B272C61660081C153 /* quickpostwidget.swift */,
+				F36B019D272C61660081C153 /* quickpostwidget.intentdefinition */,
+				F36B019E272C61690081C153 /* Assets.xcassets */,
+				F36B01A0272C61690081C153 /* Info.plist */,
+			);
+			path = quickpostwidget;
 			sourceTree = "<group>";
 		};
 		F36D0C529E218AD2F133ABFD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				92B050D47B7CE1E6EE92FBC2 /* Pods_Postaholic.framework */,
+				F36B0196272C61660081C153 /* WidgetKit.framework */,
+				F36B0198272C61660081C153 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -92,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				F372EA3526FC64B5008A58EB /* Postaholic */,
+				F36B019A272C61660081C153 /* quickpostwidget */,
 				F372EA3426FC64B5008A58EB /* Products */,
 				B97DC9FF9EB2824CA1D0EB13 /* Pods */,
 				F36D0C529E218AD2F133ABFD /* Frameworks */,
@@ -102,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				F372EA3326FC64B5008A58EB /* Postaholic.app */,
+				F36B0195272C61660081C153 /* quickpostwidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,13 +210,17 @@
 		F372EA3526FC64B5008A58EB /* Postaholic */ = {
 			isa = PBXGroup;
 			children = (
+				F3FDF0EA27215E1B006DE7B7 /* Models */,
+				F3AEA6082718915C00025FB5 /* Utilities */,
 				F363ACD9270F1B7B001F849D /* fonts */,
 				F363ACD4270F0FA0001F849D /* Services */,
 				F372EA4526FC6942008A58EB /* GoogleService-Info.plist */,
 				F372EA3626FC64B5008A58EB /* PostaholicApp.swift */,
 				F372EA3A26FC64B6008A58EB /* Assets.xcassets */,
 				F372EA3F26FC64B6008A58EB /* Info.plist */,
+				F356B0E1271018C600DC5F7F /* Views */,
 				F372EA3C26FC64B6008A58EB /* Preview Content */,
+				F3B916532729EFEE003C798B /* ProfileView.swift */,
 			);
 			path = Postaholic;
 			sourceTree = "<group>";
@@ -129,13 +234,50 @@
 				F363ACCA270EBF84001F849D /* SplashScreenView.swift */,
 				F363ACD2270ED164001F849D /* RegisterView.swift */,
 				F372EA3D26FC64B6008A58EB /* Preview Assets.xcassets */,
+				F356B0DB2710163400DC5F7F /* OnboardingView.swift */,
+				F3AEA60627183DAA00025FB5 /* CreatePostScreenView.swift */,
+				F3FDF0E627215416006DE7B7 /* PostView.swift */,
+				F3FDF0E827215974006DE7B7 /* FeedScreenView.swift */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F3AEA6082718915C00025FB5 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F3AEA6092718919000025FB5 /* ImagePicker.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F3FDF0EA27215E1B006DE7B7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3FDF0EB27215E9C006DE7B7 /* PostModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F36B0194272C61660081C153 /* quickpostwidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F36B01A9272C61690081C153 /* Build configuration list for PBXNativeTarget "quickpostwidgetExtension" */;
+			buildPhases = (
+				F36B0191272C61660081C153 /* Sources */,
+				F36B0192272C61660081C153 /* Frameworks */,
+				F36B0193272C61660081C153 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = quickpostwidgetExtension;
+			productName = quickpostwidgetExtension;
+			productReference = F36B0195272C61660081C153 /* quickpostwidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		F372EA3226FC64B5008A58EB /* Postaholic */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F372EA4226FC64B6008A58EB /* Build configuration list for PBXNativeTarget "Postaholic" */;
@@ -145,10 +287,12 @@
 				F372EA3026FC64B5008A58EB /* Frameworks */,
 				F372EA3126FC64B5008A58EB /* Resources */,
 				331E569510D286CA1AD8C5FB /* [CP] Embed Pods Frameworks */,
+				F36B01A6272C61690081C153 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F36B01A4272C61690081C153 /* PBXTargetDependency */,
 			);
 			name = Postaholic;
 			productName = Postaholic;
@@ -164,6 +308,9 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					F36B0194272C61660081C153 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
 					F372EA3226FC64B5008A58EB = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
@@ -183,11 +330,20 @@
 			projectRoot = "";
 			targets = (
 				F372EA3226FC64B5008A58EB /* Postaholic */,
+				F36B0194272C61660081C153 /* quickpostwidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F36B0193272C61660081C153 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F36B019F272C61690081C153 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F372EA3126FC64B5008A58EB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -196,6 +352,7 @@
 				F372EA4626FC6942008A58EB /* GoogleService-Info.plist in Resources */,
 				F372EA3B26FC64B6008A58EB /* Assets.xcassets in Resources */,
 				F363ACDD270F1CE0001F849D /* Helvetica-Font in Resources */,
+				F365F378272979E7001EAF66 /* helvetica-light-587ebe5a59211.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,24 +401,93 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F36B0191272C61660081C153 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F36B01A1272C61690081C153 /* quickpostwidget.intentdefinition in Sources */,
+				F36B019C272C61660081C153 /* quickpostwidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F372EA2F26FC64B5008A58EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3AEA60A2718919000025FB5 /* ImagePicker.swift in Sources */,
 				F372EA3926FC64B5008A58EB /* ContentView.swift in Sources */,
 				F372EA3726FC64B5008A58EB /* PostaholicApp.swift in Sources */,
+				F36B01AB272C6ABB0081C153 /* BttonskipView.swift in Sources */,
+				F3AEA60727183DAA00025FB5 /* CreatePostScreenView.swift in Sources */,
+				F3FDF0EC27215E9C006DE7B7 /* PostModel.swift in Sources */,
+				F36B01A2272C61690081C153 /* quickpostwidget.intentdefinition in Sources */,
 				F363ACCF270EC34C001F849D /* LoginView.swift in Sources */,
+				F356B0E32710236C00DC5F7F /* StartButtonView.swift in Sources */,
+				F356B0DC2710163400DC5F7F /* OnboardingView.swift in Sources */,
 				F363ACD3270ED164001F849D /* RegisterView.swift in Sources */,
+				F356B0E02710173D00DC5F7F /* OnboardingCardView.swift in Sources */,
+				F3B916542729EFEE003C798B /* ProfileView.swift in Sources */,
 				F363ACCB270EBF84001F849D /* SplashScreenView.swift in Sources */,
 				F363ACD8270F11EC001F849D /* FireStoreService.swift in Sources */,
 				F363ACD1270EC616001F849D /* AuthScreenView.swift in Sources */,
 				F363ACD6270F0FBF001F849D /* AuthService.swift in Sources */,
+				F3FDF0E727215416006DE7B7 /* PostView.swift in Sources */,
+				F3FDF0E927215974006DE7B7 /* FeedScreenView.swift in Sources */,
+				F3FDF0E52720C8CA006DE7B7 /* StorageService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F36B01A4272C61690081C153 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F36B0194272C61660081C153 /* quickpostwidgetExtension */;
+			targetProxy = F36B01A3272C61690081C153 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		F36B01A7272C61690081C153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = quickpostwidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.OpenWindow.Postaholic.quickpostwidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F36B01A8272C61690081C153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = quickpostwidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.OpenWindow.Postaholic.quickpostwidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		F372EA4026FC64B6008A58EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -382,6 +608,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A5820E270867D5B17864E129 /* Pods-Postaholic.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -404,6 +631,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DF6075CB4C3AA328719C878F /* Pods-Postaholic.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -425,6 +653,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F36B01A9272C61690081C153 /* Build configuration list for PBXNativeTarget "quickpostwidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F36B01A7272C61690081C153 /* Debug */,
+				F36B01A8272C61690081C153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F372EA2E26FC64B5008A58EB /* Build configuration list for PBXProject "Postaholic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

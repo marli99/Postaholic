@@ -13,8 +13,6 @@ struct AuthScreenView: View {
     
     var body: some View {
         
-        
-
         ZStack{
             ZStack(alignment: Alignment(horizontal: .trailing, vertical: .bottom)){
                 LinearGradient(gradient: Gradient(colors: [Color.black, Color.purple
@@ -22,13 +20,13 @@ struct AuthScreenView: View {
                     .clipShape(CShape())
                 
                 Path{ path in
-                    path.addArc(center: CGPoint(x: UIScreen.main.bounds.width - 130, y: UIScreen.main.bounds.height - 50), radius: 40, startAngle: .zero,endAngle: .init(degrees: 180), clockwise: true)
+                    path.addArc(center: CGPoint(x: UIScreen.main.bounds.width - 130, y: UIScreen.main.bounds.height - 45), radius: 40, startAngle: .zero,endAngle: .init(degrees: 180), clockwise: true)
                     
                 }
                 .fill(Color.white)
                 
                 Button(action: {
-                    showRegister = true
+                    showRegister = false
                 }, label: {
                     Image(systemName: "xmark")
                         .font(.system(size: 25, weight: .bold))
@@ -36,24 +34,22 @@ struct AuthScreenView: View {
                 }).offset(x: -37, y:-30)
                 
                 Button(action: {
-                    showRegister = false
+                    showRegister = true
                 }, label: {
                     Image(systemName: "person.badge.plus.fill")
                         .font(.system(size: 25, weight: .bold))
                         .foregroundColor(.black)
-                }).offset(x: -115, y:-40)
-                
-                showRegister ? nil : LoginView()
-                showRegister ? RegisterView() : nil
+                }).offset(x: -115, y:-50)
                 
             }
-            
-                
-            .foregroundColor(.white)
+            .offset(y: showRegister ?
+                -UIScreen.main.bounds.height + 130 : 0)
+            showRegister ? nil : LoginView()
+            showRegister ? RegisterView() : nil
         }
         .ignoresSafeArea(.all)
         .statusBar(hidden: true)
-        .background(Color.white.edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/))
+        .background(Color.white)
         
     }
    

@@ -48,7 +48,8 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
-		<string>helvetica-light-587ebe5a59211.ttf</string>
+		<string>fonts/DancingScript-VariableFont_wght.ttf</string>
+		<string>fonts/helvetica-light-587ebe5a59211.ttf</string>
 	</array>
 </dict>
 </plist>

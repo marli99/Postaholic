@@ -8,31 +8,64 @@
 import SwiftUI
 
 struct LoginView: View {
+    @AppStorage("userId") var userId: String = ""
+    
     @State private var emailVal: String = ""
     @State private var passwordVal: String = ""
     
+    @State var isLoading: Bool = true
     
-//    @State var showRegister: Bool = false
+    @State var errorMessage = ""
+    @State var showingAlert = false
+    @State var errorTitle = "NOOOO"
+    
+    func errorCheck() -> String?{
+        if emailVal.trimmingCharacters(in: .whitespaces).isEmpty ||
+            passwordVal.trimmingCharacters(in: .whitespaces).isEmpty {
+            return  "Please fill in all of the required fields"
+          
+        }
+        return nil
+    }
+        
+        func login(){
+            if let error = errorCheck(){
+                self.errorMessage = error
+                self.showingAlert = true
+                return
+            }
+            
+            AuthService.signIn(email: emailVal, password: passwordVal, onSuccess: {(uid) in
+            print("Firebase Auth ID: \(uid)")
+                userId = uid
+            return
+        }, onError: {(error) in
+            self.errorMessage = error
+            self.showingAlert = true
+            return
+        })
+    }
+
     
     var body: some View {
         ZStack{
-            LinearGradient(gradient: Gradient(colors: [Color.black, Color.purple
-            ]), startPoint: /*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/).ignoresSafeArea(.all)
-                   
-            VStack(alignment: .leading, spacing: 30){
-                Image("IOSLOGO")
+//            LinearGradient(gradient: Gradient(colors: [Color.black, Color.purple
+//            ]), startPoint: /*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/).ignoresSafeArea(.all)
+//                   
+            VStack(alignment: .center, spacing: 30){
+                Image("IOSLOGOblack")
                     .resizable()
-                    .frame(width: 170, height: 230, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .aspectRatio(contentMode: .fit)
-                    .padding(.leading, 100)
-                    .padding(.top, 30)
+                 
                     
                     Text("Postaholic")
-                        .padding(.leading, 130)
+            
+                        .foregroundColor(.black)
                       
                     
                     Text("LOGIN")
-                        .padding(.leading, 150)
+        
+                        .foregroundColor(.black)
                    
                 
                 HStack{
@@ -45,7 +78,7 @@ struct LoginView: View {
                         
                 }
                 
-                .foregroundColor(.white)
+      
                 .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
                 .background(Color.white.opacity(0.5).cornerRadius(10.0))
                 
@@ -67,7 +100,8 @@ struct LoginView: View {
                 
                 
                 Button(action: {
-//                    showRegister = false
+                   print("clicked login button")
+                    login()
                 }, label:{
                     Text("Login")
                         .font(.system(size: 20))
@@ -78,33 +112,20 @@ struct LoginView: View {
                 .foregroundColor(.black)
                 .cornerRadius(10.0)
                 .padding(.leading, 130)
-                
-                HStack{
-                    Text("Do not have an Account")
-                        .font(.system(size: 10))
-                    Button(action: {
-//                        showRegister = true
-                    }, label:{
-                        Text("Sign Up")
-                            .font(.system(size: 10))
-                            .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-                           
-                    })
-//                    showRegister ? RegisterView() : nil
-                }
-                .padding(.leading, 100)
-                
-                .padding(.bottom, 130)
-                
-            }
+                .padding(.bottom,100)
+                .alert(isPresented: $showingAlert, content: {
+                    Alert(title: Text(errorTitle), message: Text(errorMessage), dismissButton: .default(Text("Try again")))
+                })
             
             .foregroundColor(.white)
             .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-    
         }
         
+        }
+        
+        
+      
     }
-    
     
 }
 

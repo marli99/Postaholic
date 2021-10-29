@@ -98,7 +98,7 @@
 		F372EA4526FC6942008A58EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F3AEA60627183DAA00025FB5 /* CreatePostScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostScreenView.swift; sourceTree = "<group>"; };
 		F3AEA6092718919000025FB5 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		F3B916532729EFEE003C798B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F3B916532729EFEE003C798B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = ../ProfileView.swift; sourceTree = "<group>"; };
 		F3FDF0E42720C8C9006DE7B7 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		F3FDF0E627215416006DE7B7 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		F3FDF0E827215974006DE7B7 /* FeedScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedScreenView.swift; sourceTree = "<group>"; };
@@ -220,7 +220,6 @@
 				F372EA3F26FC64B6008A58EB /* Info.plist */,
 				F356B0E1271018C600DC5F7F /* Views */,
 				F372EA3C26FC64B6008A58EB /* Preview Content */,
-				F3B916532729EFEE003C798B /* ProfileView.swift */,
 			);
 			path = Postaholic;
 			sourceTree = "<group>";
@@ -228,6 +227,7 @@
 		F372EA3C26FC64B6008A58EB /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				F3B916532729EFEE003C798B /* ProfileView.swift */,
 				F363ACD0270EC616001F849D /* AuthScreenView.swift */,
 				F372EA3826FC64B5008A58EB /* ContentView.swift */,
 				F363ACCE270EC34C001F849D /* LoginView.swift */,
